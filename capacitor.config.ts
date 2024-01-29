@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'reciclica-app',
+  appName: 'reciclica',
   webDir: 'www',
   server: {
     androidScheme: 'https'

@@ -1,7 +1,7 @@
 {
-  "name": "reciclica-app",
+  "name": "reciclica",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular-standalone"
 }
