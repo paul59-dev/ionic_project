@@ -20,11 +20,21 @@
     </ion-item>
   </ion-list>
   
-  <app-pickup-call-card></app-pickup-call-card>
+  <app-pickup-call-card 
+    status="hold" 
+    updatedAt="30/01/2024 11:38" 
+    createdAt="24/01/2024" 
+    notes="we have two bags that are full, one with plastic and the other with glasses"
+  >
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="success" fill="clear" size="full" footer>See all...</ion-button>
+  </app-pickup-call-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button coloe="success">
-      <ion-icon name="add"></ion-icon>
+    <ion-fab-button color="success">
+      <ion-icon src="../../../assets/icon/add.svg"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-content>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
@@ -6,9 +7,18 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './pickup-call-card.component.html',
   styleUrls: ['./pickup-call-card.component.scss'],
   standalone: true,
-  imports: [IonicModule]
+  imports: [IonicModule, CommonModule]
 })
 export class PickupCallCardComponent  implements OnInit {
+
+  @Input() hasHeader: boolean = false;
+  @Input() hasFooter: boolean = false;
+
+  @Input() status: string = "";
+  @Input() updatedAt: string = "";
+  @Input() createdAt: string = "";
+  @Input() notes: string = "";
+  @Input() value: string = "";
 
   constructor() { }
 
