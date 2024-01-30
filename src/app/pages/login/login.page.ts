@@ -4,13 +4,14 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { LoginPageForm } from './login.page.form';
+import { ErrorMessageComponent } from 'src/app/components/error-message/error-message.component';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, ReactiveFormsModule]
+  imports: [IonicModule, CommonModule, FormsModule, ReactiveFormsModule, ErrorMessageComponent]
 })
 export class LoginPage implements OnInit {
 
