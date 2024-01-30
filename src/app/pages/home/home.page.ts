@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pickup-call-card.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,9 +14,17 @@ import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pic
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goToPickupCalls() {
+    this.router.navigate(['pickup-calls'])
+  }
+
+  newPickupCall() {
+    this.router.navigate(['pickup-call'])
   }
 
 }
