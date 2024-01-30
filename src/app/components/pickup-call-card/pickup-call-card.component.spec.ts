@@ -9,7 +9,7 @@ describe('PickupCallCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PickupCallCardComponent ],
+      declarations: [],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 

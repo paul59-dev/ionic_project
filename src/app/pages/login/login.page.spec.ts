@@ -14,6 +14,12 @@ describe('LoginPage', () => {
     fixture.detectChanges();
   }));
 
+  it('should create form on init', () => {
+    component.ngOnInit();
+
+    expect(component.form).not.toBeUndefined();
+  })
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
